@@ -1,4 +1,5 @@
 # 🚀 DEV box ⚙
+
 A simple pre-configured Vagrant Box for your LAMP/LEMP development.
 
 The initial setup comes from [Scotch Box](https://github.com/scotch-io/scotch-box) so big thanks to Nick for his work.
@@ -11,16 +12,16 @@ Open your terminal, clone this repository and start Vagrant.
 Grab a cup of ☕ and wait until box download has finished
 
 ```bash
-$ git clone https://github.com/uniqu3/dev.box.git your-folder
-$ cd your-folder
-$ vagrant up
+git clone https://github.com/uniqu3/dev.box.git your-folder
+cd your-folder
+vagrant up
 ```
 
 Once the download has finished open [192.168.33.10](192.168.33.10) in your browser and you are ready to hit the keyboard.
 
 Instead of typing IP, for convenience you could edit your `hosts` file and add the IP in example.
 
-```
+```txt
 192.168.33.10 dev.box
 ```
 
@@ -93,5 +94,5 @@ SSH to the box with `vagrant ssh`, if that doesn't work try `vagrant ssh-config`
 If you are having problems with VirtualBox Guest Additions and Vagrant try installing [vagrant-vbguest](https://github.com/dotless-de/vagrant-vbguest) plugin.
 
 ```bash
-$ vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-vbguest
 ```
